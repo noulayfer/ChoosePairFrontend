@@ -4,7 +4,6 @@ import {useNavigate} from "react-router-dom";
 import StudentList from './StudentList';
 import NamesAndMarks from "./NamesAndMarks";
 import UpsetStudents from "./UpsetStudents";
-import AverageComponent from "./AverageComponent";
 
 const MainPage = () => {
 
@@ -39,7 +38,6 @@ const MainPage = () => {
             </div>
             <NamesAndMarks namesAndMarks={mainPageDto.namesAndMarks} />
             <UpsetStudents upsetStudents={mainPageDto.upsetStudents} />
-            <AverageComponent />
         </div>
     );
 };

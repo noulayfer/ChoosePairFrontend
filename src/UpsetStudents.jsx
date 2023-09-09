@@ -5,13 +5,15 @@ const UpsetStudents = (props) => {
 
     return (
         <div>
-            {props.upsetStudents.length !== 0 ? (
+            {props.upsetStudents && props.upsetStudents.length !== 0 ? (
                 <div>
-                    <h2>UpsetStudents</h2>
+                    <h2>Upset Students</h2>
                     <ul>
-                        {props.upsetStudents.map(student =>
-                            <li key={student.id}>{student.name} <ReturnButton studentName={student.name}/></li>
-                        )}
+                        {props.upsetStudents.map((student) => (
+                            <li key={student.id}>
+                                {student.name} <ReturnButton studentName={student.name} />
+                            </li>
+                        ))}
                     </ul>
                 </div>
             ) : null}

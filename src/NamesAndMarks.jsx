@@ -3,7 +3,7 @@ import React from 'react';
 const NamesAndMarks = (props) => {
     return (
         <div>
-            {Object.keys(props.namesAndMarks).length !== 0 ? (
+            {props.namesAndMarks && Object.keys(props.namesAndMarks).length !== 0 ? (
                 <div>
                     <h2>Names and Marks</h2>
                     <ul>

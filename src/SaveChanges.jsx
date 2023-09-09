@@ -5,7 +5,7 @@ const SaveChanges = () => {
 
     const navigate = useNavigate();
     const handleClick = () => {
-        navigate('/');
+        navigate('/student-pair');
     };
     const saveChanges = () => {
         axios.post("http://localhost:8081/tomcat/controller?command=save-changes")
